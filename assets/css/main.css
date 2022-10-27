@@ -1,8 +1,12 @@
 /* wire frame TODO: delete later */
+html {
+    scroll-behavior: smooth;
+}
+
 header,
 main,
 footer {
-    border: 1px solid navy;
+    border: 1px solid maroon;
 }
 
 
@@ -17,7 +21,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     height: 100vh;
 }
 
@@ -25,17 +29,73 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: lightgrey;
+    font-size: 1.5rem;
+    ;
+
+
 }
 
 
 header,
 main,
 footer {
-    padding: 1.5rem;
+    border: 3px solid maroon;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 main {
     flex-grow: 1;
+    background-color: cornflowerblue;
+}
+
+
+img {
+    border-radius: 25%;
+}
+
+.logo {
+    display: flex;
+    height: 6rem;
+}
+
+.headshot {
+    display: flex;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 25%;
+}
+
+
+.button {
+    color: maroon;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    border-color: maroon;
+    border-style: solid;
+    border-radius: 25%;
+    background-color: cornflowerblue;
+
+}
+
+.work {
+    flex-direction: row;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    color: cornflowerblue;
+    text-decoration: dashed;
+    background-color: maroon;
+    border-color: cornflowerblue;
 }
 
 
