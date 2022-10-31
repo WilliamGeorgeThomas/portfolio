@@ -1,105 +1,186 @@
 /* wire frame TODO: delete later */
+
+/* variables */
+
+/* element type selector */
+
+
 html {
     scroll-behavior: smooth;
 }
 
-header,
-main,
-footer {
-    border: 1px solid maroon;
-}
 
-
-/* reset */
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* element sectors */
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
     height: 100vh;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: lightgrey;
-    font-size: 1.5rem;
-    ;
-
-
+    /* background-image: linear-gradient(cornflowerblue, lightgray); */
+    background-image: url("../images/marjan-blan-marjanblan-_kUxT8WkoeY-unsplash.jpg");
 }
 
 
 header,
 main,
 footer {
-    border: 3px solid maroon;
+    border: 6px solid cornflowerblue;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
 }
 
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lightgray; */
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+
+nav {
+    padding-left: 1.5rem;
+}
+
+
 main {
     flex-grow: 1;
-    background-color: cornflowerblue;
+    /* background-color: lightgrey; */
 }
 
 
 img {
-    border-radius: 25%;
-}
-
-.logo {
-    display: flex;
-    height: 6rem;
-}
-
-.headshot {
-    display: flex;
-    height: 10rem;
-    width: 10rem;
-    border-radius: 25%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 
-.button {
-    color: maroon;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 5px;
-    border-color: maroon;
-    border-style: solid;
-    border-radius: 25%;
-    background-color: cornflowerblue;
+/* classes */
 
-}
-
-.work {
-    flex-direction: row;
-}
 
 a:link {
     text-decoration: none;
 }
 
-a:hover {
-    font-weight: bold;
+
+.button {
     color: cornflowerblue;
-    text-decoration: dashed;
-    background-color: maroon;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     border-color: cornflowerblue;
+    border-style: solid;
+    border-radius: 25%;
+    background-color: transparent;
+    display: inline-block;
+}
+
+
+.button:hover {
+    font-weight: bold;
+    color: maroon;
+    background-color: transparent;
+    border-color: maroon;
+    transform: scale(0.9);
+}
+
+.byline {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.contact-links {
+    max-width: 6rem;
+    max-height: 6rem;
+}
+
+
+.contact-links:hover {
+    transform: scale(0.9);
+}
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.fs-name {
+    color: transparent;
+    font-size: 3.5rem;
+    -webkit-text-stroke: 3px maroon;
+}
+
+
+.headshot {
+    max-width: 10rem;
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+
+.project {
+    max-width: 21rem;
+    max-height: 21rem;
+    /* margin: 1.5rem; */
+    overflow: hidden;
+}
+
+
+.project-titles {
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.project-img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+
+.section-titles {
+    color: transparent;
+    -webkit-text-stroke: 3px maroon;
+    font-size: 3rem;
+}
+
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
 
 
 
 
+/* .mrn-txt {
+    color: transparent;
+    -webkit-text-stroke: 3px maroon;
+} */
 
-/* classes */
+.fnt-mrn {
+    color: maroon
+}
+
+.fnt-cfb {
+    color: cornflowerblue;
+}
+
+.fnt-bold {
+    font-weight: bold;
+}
