@@ -128,23 +128,32 @@ a:link {
 
 
 .project {
-    max-width: 21rem;
-    max-height: 21rem;
+    /* max-width: 21rem;
+    max-height: 21rem; */
     /* margin: 1.5rem; */
     overflow: hidden;
 }
+
+.project:hover {
+    transform: scale(0.9);
+}
+
 
 
 .project-titles {
     color: cornflowerblue;
     font-weight: bold;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 15rem;
 }
 
 
 .project-img {
-    /* width: 100%;
-    height: 100%; */
+    max-width: 15rem;
+    max-height: 15rem;
     object-fit: cover;
     border-radius: 25%;
     overflow: hidden;
@@ -183,4 +192,24 @@ a:link {
 
 .fnt-bold {
     font-weight: bold;
+}
+
+
+.wiggle .project-img:hover {
+    animation: wiggle 75ms infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translate(2px, 0);
+    }
+
+    50% {
+        transform: translate(-2px, 0);
+    }
+
+    100% {
+        transform: translate(2px, 0);
+    }
 }
