@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     /* background-image: linear-gradient(cornflowerblue, lightgray); */
     background-image: url("../images/marjan-blan-marjanblan-_kUxT8WkoeY-unsplash.jpg");
 }
