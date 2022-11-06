@@ -1,10 +1,3 @@
-/* wire frame TODO: delete later */
-
-/* variables */
-
-/* element type selector */
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -22,7 +15,6 @@ body {
 header,
 main,
 footer {
-    /* border: 6px solid maroon; */
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 3rem;
@@ -55,7 +47,6 @@ nav {
 
 main {
     flex-grow: 1;
-    /* background-color: lightgrey; */
 }
 
 
@@ -64,9 +55,6 @@ img {
     display: block;
     object-fit: cover;
 }
-
-
-/* classes */
 
 
 a:link {
@@ -97,12 +85,14 @@ a:link {
     transform: scale(0.9);
 }
 
+
 .byline {
     display: flex;
     justify-content: flex-end;
     color: maroon;
     font-weight: bold;
 }
+
 
 .contact-links {
     max-width: 7rem;
@@ -114,12 +104,14 @@ a:link {
     transform: scale(0.9);
 }
 
+
 .contacts-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
 }
+
 
 .fs-name {
     color: transparent;
@@ -133,13 +125,6 @@ a:link {
     border-radius: 25%;
     overflow: hidden;
 }
-
-
-/* .project {
-    /* max-width: 21rem;
-    max-height: 21rem; */
-/* margin: 1.5rem; */
-/* overflow: hidden; */
 
 
 .project-titles {
@@ -181,6 +166,7 @@ a:link {
     animation: wiggle 400ms infinite;
     animation-timing-function: linear;
 }
+
 
 @keyframes wiggle {
     0% {
